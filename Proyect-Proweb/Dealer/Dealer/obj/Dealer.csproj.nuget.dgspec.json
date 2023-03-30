@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ILMF-\\OneDrive\\Desktop\\STOP K-9\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj": {}
+    "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ILMF-\\OneDrive\\Desktop\\STOP K-9\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj": {
+    "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ILMF-\\OneDrive\\Desktop\\STOP K-9\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj",
+        "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj",
         "projectName": "Dealer",
-        "projectPath": "C:\\Users\\ILMF-\\OneDrive\\Desktop\\STOP K-9\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj",
-        "packagesPath": "C:\\Users\\ILMF-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ILMF-\\OneDrive\\Desktop\\STOP K-9\\Proyect-Proweb\\Dealer\\Dealer\\obj\\",
+        "projectPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ILMF-\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
