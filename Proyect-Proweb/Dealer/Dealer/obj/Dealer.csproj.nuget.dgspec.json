@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj": {}
+    "C:\\Users\\ivanl\\Desktop\\Proyecto-ProWeb\\Proyect-Proweb_Dealer\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj": {
+    "C:\\Users\\ivanl\\Desktop\\Proyecto-ProWeb\\Proyect-Proweb_Dealer\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj",
+        "projectUniqueName": "C:\\Users\\ivanl\\Desktop\\Proyecto-ProWeb\\Proyect-Proweb_Dealer\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj",
         "projectName": "Dealer",
-        "projectPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Proyect-Proweb\\Dealer\\Dealer\\obj\\",
+        "projectPath": "C:\\Users\\ivanl\\Desktop\\Proyecto-ProWeb\\Proyect-Proweb_Dealer\\Proyect-Proweb\\Dealer\\Dealer\\Dealer.csproj",
+        "packagesPath": "C:\\Users\\ivanl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivanl\\Desktop\\Proyecto-ProWeb\\Proyect-Proweb_Dealer\\Proyect-Proweb\\Dealer\\Dealer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ivanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
