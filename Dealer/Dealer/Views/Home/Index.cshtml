@@ -1,0 +1,182 @@
+﻿@model Dealer.Models.VehiculosStock
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+
+<div class="Home-Hero">
+    <div class="Home-hero-slides">
+        <div class= "slider">
+            <img id="img-1" src="https://www.cnet.com/a/img/resize/7ce442d9bcd2e90b30e8dfc7182fb51f14fd4f79/hub/2022/03/24/33f96f32-fbcf-4403-8a51-86fe4537aae7/2022-porsche-911-turbo-s-001.jpg?auto=webp&fit=crop&height=675&width=1200" />
+            <img id="img-2" src="https://www.cnet.com/a/img/resize/bb2e37e156b278aad1685e7293fbc0f61846fe3b/hub/2020/06/11/438f382a-8742-4a3c-ad5a-66316ea27196/2021-porsche-911-turbo-s-cabriolet-016.jpg?auto=webp&fit=crop&height=675&width=1200" />
+            <img id="img-3" src="https://www.cnet.com/a/img/resize/a3b0bb492809b7120b6cbc5789c39555c20fa266/hub/2022/04/27/5fe9ca2d-635a-4bdc-ac1a-b58f340c0fe9/2023-porsche-911-sport-classic-110.jpg?auto=webp&fit=crop&height=675&width=1200" />
+            <img id="img-4" src="https://image.khaleejtimes.com/?uuid=3fdd2a71-600e-5b5d-9be9-3222748b9abe&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.93697&x=0&y=0&width=1200&height=675" />
+        </div>
+        <div class="slider-nav">
+            <a href="#img-1"></a>
+            <a href="#img-2"></a>
+            <a href="#img-3"></a>
+            <a href="#img-4"></a>
+        </div>
+    </div>
+</div>
+
+<div class="Home-banners">
+
+    <h2 class="home-headers">Nuestros vehículos</h2>
+
+    <div class="Home-banners-container">
+        <div class="Home-banners-content">
+            <a href="">
+                <img src="https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Nuestros-modelos-Autos-nuevos/Vehiculos-nuevos-PLA-desktop.jpg?rev=27b7b4e4090b4eb1bb69c7104af51119" />
+                <span><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>Vehículos nuevos</span>
+            </a>
+        </div>
+        <div class="Home-banners-content">
+            <a href="">
+                <img src="https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/SharedDealersWebsite/Model-Teaser/911/CZ21V00OX0010_rgb.jpg?rev=-1" />
+                <span><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>Vehículos de reestreno</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="Home-build">
+    <h2 class="home-headers">Crea tu Porsche</h2>
+
+    <div class="Home-build-content">
+        <div class="Home-build-imgContainer">
+            <img src="https://assets-v2.porsche.com/-/media/Project/PCOM/SharedSite/PorscheExclusiveManufaktur/Personality/001-hero-13-5-intro.jpg?rev=d5a0408d1e944d21af3dcf4490e1e9de&w=1299" />
+        </div>
+
+        <div class="Home-build-Caption">
+            <h4>Un Porsche a tu estilo!</h4>
+
+            <p class="Home-build-Caption-text"><i class="fa-solid fa-circle fa-2xs" style="margin-right:5px;"></i>Haz que uno de nuestros modelos se parezca a ti!</p>
+            <p class="Home-build-Caption-text"><i class="fa-solid fa-circle fa-2xs" style="margin-right:5px;"></i>Personaliza con una inmesa paleta de colores.</p>
+            <p class="Home-build-Caption-text"><i class="fa-solid fa-circle fa-2xs" style="margin-right:5px;"></i>Crea tu propia experiencia Porsche.</p>
+
+            <div class="Home-build-imgContainer-configuratorBtn">
+                <i class='bx bx-cog'></i>
+                <a>Ir al configurador</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="Home-testDrive">
+    <h4 class="home-headers">Solicita una prueba de manejo</h4>
+
+    <form>
+        <div class="form-group">
+            <label class="control-label">Modelo*</label>
+            <select class="form-control form-select" asp-items="ViewBag.IdModelo" required></select>
+        </div>
+        <div class="form-group">
+            <div>
+                <label class="control-label">Fecha de preferencia*</label>
+                <input class="form-control" type="date" style="width:15rem;" required />
+            </div>
+
+            <div>
+                <label class="control-label">Hora de preferencia*</label>
+                <input class="form-control" type="time" style="width:15rem;" required />
+            </div>
+
+        </div>
+
+        <h5>Tus datos</h5>
+
+        <div class="form-group">
+            <label class="control-label">Título*</label>
+            <select class="form-control form-select" required>
+                <option></option>
+                <option>Sr.</option>
+                <option>Sra.</option>
+                <option>Srita.</option>
+                <option>Dr.</option>
+                <option>Lic.</option>
+                <option>Ing.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Nombre/s*</label>
+            <input class="form-control" type="text" autocomplete="on" required />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Apellido/s*</label>
+            <input class="form-control" type="text" autocomplete="on" required />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Correo electrónico*</label>
+            <input class="form-control" type="email" autocomplete="on" required />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Télefono</label>
+            <input class="form-control" type="tel" autocomplete="on" />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Método de contacto preferido</label>
+            <select class="form-control form-select">
+                <option>Teléfono</option>
+                <option>Correo electrónico</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Mensaje</label>
+            <textarea rows="4" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input class="form-check-input" type="checkbox" required />
+            <label class="form-check-label">Acepto los términos y condiciones*</label>
+        </div>
+
+        <p>
+            *Test Drive sujeto a disponibilidad previa coordinación y confirmación con un ejecutivo comercial.</span>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-danger" value="Enviar" />
+            </div>
+    </form>
+</div>
+
+<div class="Home-contact">
+    <h4 class="home-headers">Dirección y contacto</h4>
+    <div class="Home-contact-content">
+        <div class="Home-contact-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6617.159139079841!2d-69.90952976569588!3d18.475135524339077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sdo!4v1680483621782!5m2!1ses!2sdo" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="Home-contact-contacts">
+            <h6>Contacto:</h6>
+            <p><i class='bx bx-map'></i>Av. Máximo Gómez 72, Santo Domingo 10100</p>
+            <p><i class='bx bx-phone'></i>+809-699-6525</p>
+            <p><i class='bx bx-phone'></i>Customer Interaction Center +1849-414-5929</p>
+            <div><i class='bx bx-envelope'></i><a href="mailto:soporteclientes@porsche.com">soporteclientes@porsche.com</a></div>
+        </div>
+    </div>
+</div>
+<footer class="Home-footer">
+
+    <p class="Home-footer-copy"> &copy; @DateTime.Now.Year Porsche IDK3M </p>
+
+    <div class="Home-footer-social">
+        <a><i class='bx bxl-facebook-square bx-md'></i></a>
+        <a><i class='bx bxl-instagram bx-md'></i></a>
+        <a><i class='bx bxl-youtube bx-md'></i></a>
+    </div>
+</footer>
