@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 14px;
-}
 
 /*@media (min-width: 1200px) {
     #container .container {
@@ -21,18 +18,146 @@ html {
 }
 
 html {
+    font-size: 14px;
     position: relative;
     min-height: 100%;
+    height: 100%;
 }
 
 body {
     margin-bottom: 60px;
 }
 
-.Home-hero-slides {
+/*.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px #e9e1e1;
+    padding: 0px 5%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-logo img {
+    margin-top: 50px;
+    width: 60px;
+    height: 78px;
+}
+
+.header-container .nav-bar .nav-bar-list {
+    list-style: none;
+}
+
+.nav-bar-item {
+    margin-left: 15px;
     position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
+    float: left;
+}
+
+    .nav-bar-item a {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px;
+        color: #000000;
+    }
+
+        .nav-bar-item a:hover {
+            color: #bd9f0c;
+        }
+
+    .nav-bar-item ul {
+        position: absolute;
+        left: -30px;
+        top: 30px;
+        width: 160px;
+        padding: 15px;
+        background-color: #4f4f4f35;
+        border-radius: 6px;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 10;
+        transition: all 450ms ease-in-out;
+    }
+
+    .nav-bar-item:hover ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-bar-item ul li {
+        margin: 15px 12px 25px;
+        list-style: none;
+        width: 100%;
+    }
+
+        .nav-bar-item ul li a {
+            padding: 0;
+            font-size: 16px;
+            color: #000000;
+        }
+
+            .nav-bar-item ul li a:hover {
+                color: #b20b0b;
+            }
+*/
+.Home-Hero {
+    position: relative;
+    background: url(https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Home-Page/Dealer/Porsche-Center-DominicanRepublic-Desktop-2.jpg?rev=20dd0ab307914496bef6d5649b0a97b1) no-repeat center;
+    background-size: cover;
+    height: 500px;  
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+    .container h1 {
+        margin: 0;
+        font-size: 66px;
+    }
+
+        .container h1 span {
+            border: 6px solid #fff;
+            padding: 6px 14px;
+            display: inline-block;
+        }
+
+.cen {
+    margin: 20px;
+    display: block;
+    font-size: 22px;
+}
+
+.button {
+    color: #fff;
+    padding: 10px 24px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+
+}
+
+    .button:hover {
+        opacity: .6;
+    }
+/*.Home-hero-slides {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
 }
 
 .slider {
@@ -72,52 +197,7 @@ body {
         .slider-nav a:hover {
             opacity: 100%;
         }
-
-
-.slider {
-    display: flex;
-    aspect-ratio: 16 / 9;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 .25rem .5rem #21212126;
-    border-radius: .5rem;
-}
-
-.Home-hero-slides {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.slider img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-    .slider-nav a {
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        background-color: #000000;
-        opacity: .75;
-    }
-
-        .slider-nav a:hover {
-            opacity: 100%;
-        }
-
+*/
 
 .Home-Hero, .Home-banners, .Home-build, .Home-testDrive, .Home-contact {
     padding: 0 8.5rem;
