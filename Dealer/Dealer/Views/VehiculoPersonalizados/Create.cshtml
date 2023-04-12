@@ -1,0 +1,261 @@
+﻿@model Dealer.Models.VehiculoPersonalizado
+@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Create";
+
+}
+
+<div class="row">
+    <div>
+        @{
+            var modelo = ViewBag.Modelo as Modelo;
+        }
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                @*<label asp-for="IdMarca" class="control-label"></label>*@
+                <select asp-for="IdMarca" class="form-control" asp-items="ViewBag.IdMarca" style="display:none;"></select>
+
+            </div>
+            <div class="create-form-show-container">
+                <div class="create-form-show_name_imgs">
+
+                    <select asp-for="IdModelo" id="IdModelo" class="form-control IdModelo" asp-items="ViewBag.IdModelo" data-url="@Url.Action("GetImages", "Modelo")" disabled></select>
+
+                    <div class="create-car-imgs">
+                        <div class="create-car-thumbnails"><img src="@Url.Content(modelo.ImgModelo2)" /></div>
+                        <div class="create-car-thumbnails"><img src="@Url.Content(modelo.ImgModelo3)" /></div>
+                        <div class="create-car-thumbnails"><img src="@Url.Content(modelo.ImgModelo4)" /></div>
+                        <div class="create-car-thumbnails"><img src="@Url.Content(modelo.ImgModelo5)" /></div>
+                        <div class="create-car-thumbnails"><img src="@Url.Content(modelo.ImgModelo6)" /></div>
+                    </div>
+
+                </div>
+
+                <div class="create-form-show_color_extras">
+
+                    <div  class="create-form-show_precioTotal">
+
+                        <span id="precioTotal" class="create-form-precioTotal_vehiculo"></span>
+                        <span id="precioTotalExtras" class="create-form-precioTotal_Extras_vehiculo"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Vin" class="control-label">VIN</label>
+                        @{
+                            Random random = new Random();
+                            long numeroAleatorio = random.NextLong(10000000000000000, 99999999999999999);
+                            string cadenaAleatoria = numeroAleatorio.ToString();
+                        }
+                        <input asp-for="Vin" class="form-control" value="@cadenaAleatoria" readonly />
+
+                        <span asp-validation-for="Vin" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ColorExterior" class="control-label">Color exterior</label>
+                        <select asp-for="ColorExterior" class="form-control form-select" asp-items="ViewBag.ColorExterior" onchange="actualizarPrecio()" required>
+                            <option>Seleccione un color</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ColorInterior" class="control-label">Color de interior</label>
+                        <select asp-for="ColorInterior" class="form-control form-select" asp-items="ViewBag.ColorInterior" onchange="actualizarPrecio()" required>
+                            <option>Seleccione un color</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra01" class="control-label">Extra #1</label>
+                        <select asp-for="Extra01" class="form-control form-select" asp-items="ViewBag.Extra01" onchange="actualizarPrecio()">
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra02" class="control-label"> Extra #2</label>
+                        <select asp-for="Extra02" class="form-control form-select" asp-items="ViewBag.Extra02" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra03" class="control-label">Extra #3</label>
+                        <select asp-for="Extra03" class="form-control form-select" asp-items="ViewBag.Extra03" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra04" class="control-label">Extra #4</label>
+                        <select asp-for="Extra04" class="form-control form-select" asp-items="ViewBag.Extra04" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra05" class="control-label">Extra #5</label>
+                        <select asp-for="Extra05" class="form-control form-select" asp-items="ViewBag.Extra05" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra06" class="control-label">Extra #6</label>
+                        <select asp-for="Extra06" class="form-control form-select" asp-items="ViewBag.Extra06" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra07" class="control-label">Extra #7</label>
+                        <select asp-for="Extra07" class="form-control form-select" asp-items="ViewBag.Extra07" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra08" class="control-label">Extra #8</label>
+                        <select asp-for="Extra08" class="form-control form-select" asp-items="ViewBag.Extra08" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra09" class="control-label">Extra #9</label>
+                        <select asp-for="Extra09" class="form-control form-select" asp-items="ViewBag.Extra09" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra10" class="control-label">Extra #10</label>
+                        <select asp-for="Extra10" class="form-control form-select" asp-items="ViewBag.Extra10" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra11" class="control-label">Extra #11</label>
+                        <select asp-for="Extra11" class="form-control form-select" asp-items="ViewBag.Extra11" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra12" class="control-label">Extra #12</label>
+                        <select asp-for="Extra12" class="form-control form-select" asp-items="ViewBag.Extra12" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra13" class="control-label">Extra #13</label>
+                        <select asp-for="Extra13" class="form-control form-select" asp-items="ViewBag.Extra13" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra14" class="control-label">Extra #14</label>
+                        <select asp-for="Extra14" class="form-control form-select" asp-items="ViewBag.Extra14" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra15" class="control-label">Extra #15</label>
+                        <select asp-for="Extra15" class="form-control form-select" asp-items="ViewBag.Extra15" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra16" class="control-label">Extra #16</label>
+                        <select asp-for="Extra16" class="form-control form-select" asp-items="ViewBag.Extra16" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra17" class="control-label">Extra #17</label>
+                        <select asp-for="Extra17" class="form-control form-select" asp-items="ViewBag.Extra17" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra18" class="control-label">Extra #18</label>
+                        <select asp-for="Extra18" class="form-control form-select" asp-items="ViewBag.Extra18" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra19" class="control-label">Extra #19</label>
+                        <select asp-for="Extra19" class="form-control form-select" asp-items="ViewBag.Extra19" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Extra20" class="control-label"> Extra #20</label>
+                        <select asp-for="Extra20" class="form-control form-select" asp-items="ViewBag.Extra20" onchange="actualizarPrecio()"><option></option></select>
+                    </div>
+                  
+                    <div class="form-group">
+                        @*<label asp-for="Precio" class="control-label"></label>*@
+                        <input asp-for="Precio" class="form-control" id="inputPrecio" readonly type="hidden"/>
+                        @*<span asp-validation-for="Precio" class="text-danger"></span>*@
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" value="Enviar configuracion" class="btn btn-danger" style="font-size: 1.3rem;  font-weight:600;" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+
+    <script>
+        $('.create-car-imgs').slick({
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            // autoplay: true,
+            //autoplaySpeed: 2000,
+        });
+    </script>
+
+    <script>
+        // Seleccionar el elemento select por su id
+        var select = document.getElementById("IdModelo");
+
+        // Llamar a la función actualizarPrecio() al cargar la página
+        window.onload = function () {
+            actualizarPrecio();
+        }
+
+        // Habilitar el select después de llamar a la función actualizarPrecio()
+        select.disabled = true;
+    </script>
+
+    <script>
+        function actualizarPrecio() {
+            var idModelo = $("#IdModelo").val();
+            var idColorExterior = $("#ColorExterior").val();
+            var idColorInterior = $("#ColorInterior").val();
+            var idExtra01 = $("#Extra01").val();
+            var idExtra02 = $("#Extra02").val();
+            var idExtra03 = $("#Extra03").val();
+            var idExtra04 = $("#Extra04").val();
+            var idExtra05 = $("#Extra05").val();
+            var idExtra06 = $("#Extra06").val();
+            var idExtra07 = $("#Extra07").val();
+            var idExtra08 = $("#Extra08").val();
+            var idExtra09 = $("#Extra09").val();
+            var idExtra10 = $("#Extra10").val();
+            var idExtra11 = $("#Extra11").val();
+            var idExtra12 = $("#Extra12").val();
+            var idExtra13 = $("#Extra13").val();
+            var idExtra14 = $("#Extra14").val();
+            var idExtra15 = $("#Extra15").val();
+            var idExtra16 = $("#Extra16").val();
+            var idExtra17 = $("#Extra17").val();
+            var idExtra18 = $("#Extra18").val();
+            var idExtra19 = $("#Extra19").val();
+            var idExtra20 = $("#Extra20").val();
+
+            $.ajax({
+                type: "GET",
+                url: "/VehiculoPersonalizados/CalcularPrecioTotal",
+                data: {
+                    idModelo: idModelo,
+                    idColorExterior: idColorExterior,
+                    idColorInterior: idColorInterior,
+                    idExtra01: idExtra01,
+                    idExtra02: idExtra02,
+                    idExtra03: idExtra03,
+                    idExtra04: idExtra04,
+                    idExtra05: idExtra05,
+                    idExtra06: idExtra06,
+                    idExtra07: idExtra07,
+                    idExtra08: idExtra08,
+                    idExtra09: idExtra09,
+                    idExtra10: idExtra10,
+                    idExtra11: idExtra11,
+                    idExtra12: idExtra12,
+                    idExtra13: idExtra13,
+                    idExtra14: idExtra14,
+                    idExtra15: idExtra15,
+                    idExtra16: idExtra16,
+                    idExtra17: idExtra17,
+                    idExtra18: idExtra18,
+                    idExtra19: idExtra19,
+                    idExtra20: idExtra20
+                },
+                success: function (data) {
+                    var precioTotalConComas = data.precioTotal.toLocaleString();
+                    var sumaColoresConComas = data.precioTotalExtras.toLocaleString();
+
+                    $("#precioTotal").text("Precio Total: $ " + precioTotalConComas);
+                    $("#precioTotalExtras").text("Precio total de extras: $ " + sumaColoresConComas);
+                    $("#inputPrecio").val(data.precioTotal);
+                }
+            });
+        }
+    </script>
+
+}

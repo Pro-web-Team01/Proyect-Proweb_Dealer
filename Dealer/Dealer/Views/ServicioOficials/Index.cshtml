@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Dealer.Models.ServicioOficial>
+
+@{
+    ViewData["Title"] = "Admin. Servicio oficial";
+}
+<div class="admin-actions-container">
+
+    <h1>@ViewData["Title"]</h1>
+
+
+    <a asp-action="Create" class="btn btn-danger rounded-pill" style="display:flex;justify-content:center; width:20rem; gap: 3px; font-family:Montserrat; font-weight:600; font-size: 1.3rem; margin: 2rem 0;">
+
+        <lord-icon src="https://cdn.lordicon.com/ynwbvguu.json"
+                   trigger="hover"
+                   colors="primary:#ffffff"
+                   style="width:25px;height:25px;">
+        </lord-icon>
+        Agregar Servicio oficial
+    </a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Concesionario
+                </th>
+                <th>
+                    Domicilio
+                </th>
+                <th>
+                    RNC
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreServicioOficial)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdConcesionarioNavigation.NombreConcesionario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DomicilioServicioOficial)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RncServicioOficial)
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdServicioOficial" title="Editar" style="color:#263238;"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.IdServicioOficial" title="Eliminar" style="color:#263238;">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

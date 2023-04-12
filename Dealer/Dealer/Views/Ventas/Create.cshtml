@@ -1,0 +1,107 @@
+﻿@model Dealer.Models.Venta
+
+@{
+    ViewData["Title"] = "Realizar venta de vehiculo";
+}
+
+
+<div class="row">
+    <div class="col-md-4 venta-vehiculo-container">
+        <h1>@ViewData["Title"]</h1>
+
+        <hr />
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Fecha" class="control-label"></label>
+                <input asp-for="Fecha" class="form-control create-input" />
+                <span asp-validation-for="Fecha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @*<label asp-for="Registro" class="control-label"></label>*@
+                <input asp-for="Registro" class="form-control" value="@(DateTime.Now.Year)-" type="hidden" />
+                @*<span asp-validation-for="Registro" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <label asp-for="IdConcesionario" class="control-label">Consesionario</label>
+                <select asp-for="IdConcesionario" class="form-control create-input js-example-placeholder-single js-example-basic-single js-states" asp-items="ViewBag.IdConcesionario"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdServicioOficial" class="control-label">Servicio Oficial</label>
+                <select asp-for="IdServicioOficial" class="form-control create-input js-example-placeholder-single js-example-basic-single js-states" asp-items="ViewBag.IdServicioOficial"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCliente" class="control-label">Cliente</label>
+                <select asp-for="IdCliente" class="form-control create-input js-example-placeholder-single js-example-basic-single js-states" asp-items="ViewBag.IdCliente"><option>Seleccione</option></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdVendedor" class="control-label">Vendedor</label>
+                <select asp-for="IdVendedor" class="form-control create-input js-example-placeholder-single js-example-basic-single js-states" asp-items="ViewBag.IdVendedor"><option>Seleccione</option></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="VinVehiculoStock" class="control-label">Vehículo de inventario</label>
+                <select asp-for="VinVehiculoStock" id="vinVehiculoStockSelect" class="form-control create-input js-example-placeholder-single js-example-basic-single js-states" asp-items="ViewBag.VinVehiculoStock"><option></option></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="VinVehiculoPersonalizado" class="control-label">Vehículo personalizado</label>
+                <select asp-for="VinVehiculoPersonalizado" class="form-control create-input js-example-placeholder-single js-example-basic-single js-states" asp-items="ViewBag.VinVehiculoPersonalizado"><option></option></select>
+            </div>
+            <div class="form-group">
+                @*<label asp-for="IdMarca" class="control-label">Marca</label>*@
+                <select asp-for="IdMarca" id="idMarcaSelect" class="form-control" style="display:none;" asp-items="ViewBag.IdMarca"></select>
+            </div>
+            <div class="form-group">
+                @*<label asp-for="IdModelo" class="control-label">Modelo</label>*@
+                <select asp-for="IdModelo" class="form-control" style="display:none;" asp-items="ViewBag.IdModelo"><option></option></select>
+
+            </div>
+            <div class="form-group">
+                @*<label asp-for="PrecioVehiculoStock" class="control-label">Precio vehículo de inventario</label>*@
+                <select asp-for="PrecioVehiculoStock" id="idPrecioStockSelect" class="form-control" style="display:none;" asp-items="ViewBag.PrecioVehiculoStock"></select>
+            </div>
+            <div class="form-group">
+                @*<label asp-for="PrecioVehiculoPersonalizado" class="control-label">Precio vehículo personalizado</label>*@
+                <select asp-for="PrecioVehiculoPersonalizado" class="form-control" style="display:none;" asp-items="ViewBag.PrecioVehiculoPersonalizado"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetodoPago" class="control-label">Método de pago</label>
+                <select asp-for="MetodoPago" class="form-control create-input js-example-placeholder-single js-example-basic-single js-states" asp-items="ViewBag.MetodoPago"><option>Seleccione</option></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaEntrega" class="control-label">Fecha de entrega</label>
+                <input asp-for="FechaEntrega" class="form-control create-input" />
+                <span asp-validation-for="FechaEntrega" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Vender" class="btn btn-primary rounded-pill" style="font-size:1.3rem; font-weight: 600;"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+
+@*<script>
+    document.getElementById('vinVehiculoStockSelect').addEventListener('change', function () {
+        var selectedValue = this.value; // Obtener el valor seleccionado del primer select
+        console.log("hola")
+        // Establecer el valor seleccionado del segundo select
+        document.getElementById('idPrecioStockSelect').value = selectedValue;
+
+        // Establecer el valor seleccionado del tercer select
+        //document.getElementById('idModeloSelect').value = selectedValue;
+    });
+
+</script>*@
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+
+}

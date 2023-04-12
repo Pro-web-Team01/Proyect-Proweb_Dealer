@@ -1,78 +1,119 @@
 ﻿@model Dealer.Models.VehiculosStock
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles";
 }
 
-<h1>Details</h1>
+<div class="details-car_inv-container">
 
-<div>
-    <h4>VehiculosStock</h4>
+    <div class="details-car_inv-title_price-container">
+        <h1> @Html.DisplayFor(model => model.IdMarcaNavigation.NombreMarca) @Html.DisplayFor(model => model.IdModeloNavigation.NombreModelo)  @Html.DisplayFor(model => model.Anio)</h1>
+        <p class="details-car_inv-price">
+            @((Model.Precio.HasValue ? "US$ " + Model.Precio.Value.ToString("N2") : ""))
+        </p>
+    </div>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Vin)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Vin)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Anio)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Anio)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DescripcionEquipamientoExtra)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DescripcionEquipamientoExtra)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Precio)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Precio)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Img)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Img)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ColorExteriorNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ColorExteriorNavigation.IdColorExterior)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ColorInteriorNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ColorInteriorNavigation.IdColorInterior)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CondicionNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CondicionNavigation.IdCondicion)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdMarcaNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdMarcaNavigation.IdMarca)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdModeloNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdModeloNavigation.IdModelo)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdVehiculoStock">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="details-car_inv_showCarData">
+
+        <div class="details-car_inv-img-container">
+            <img src="@Html.DisplayFor(model => model.Img)" />
+            <img src="@Html.DisplayFor(model => model.Img2)" />
+            <img src="@Html.DisplayFor(model => model.Img3)" />
+            <img src="@Html.DisplayFor(model => model.Img4)" />
+            <img src="@Html.DisplayFor(model => model.Img5)" />
+            <img src="@Html.DisplayFor(model => model.Img6)" />
+            <img src="@Html.DisplayFor(model => model.Img7)" />
+        </div>
+
+        <div class="details-car_inv-info">
+
+            <div class="details-car_inv-generalData">
+
+                <div class="details-car_inv-title_btnShop">
+                    <h4>Datos Generales</h4>
+                    <a class="btn btn-danger">Comprar</a>
+                </div>
+
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td><span>VIN:</span></td>
+                            <td colspan="1">@Html.DisplayFor(model => model.Vin)</td>
+                        </tr>
+                        <tr>
+                            <td><span>Precio:</span></td>
+                            <td colspan="1"> @((Model.Precio.HasValue ? "US$ " + Model.Precio.Value.ToString("N2") : ""))</td>
+                        </tr>
+                        <tr>
+                            <td><span>Motor:</span></td>
+                            @if (Model.IdModeloNavigation.NombreModelo.Contains("Taycan"))
+                            {
+                                <td>Eléctrico</td>
+                            }
+                            else
+                            {
+                                <td colspan="1">@Html.DisplayFor(model => model.IdModeloNavigation.Cilindrada) cilindros</td>
+                            }
+
+                        </tr>
+                        <tr>
+                            <td><span>Potencia:</span></td>
+                            <td>@Html.DisplayFor(model => model.IdModeloNavigation.Potencia) HP</td>
+                        </tr>
+                        <tr>
+                            <td><span>Color Exterior:</span></td>
+                            <td colspan="1">@Html.DisplayFor(model => model.ColorExteriorNavigation.ColorExterior1)</td>
+                        </tr>
+                        <tr>
+                            <td><span>Color Interior:</span></td>
+                            <td colspan="1">@Html.DisplayFor(model => model.ColorInteriorNavigation.ColorInterior1)</td>
+                        </tr>
+                        <tr>
+                            <td><span>Tracción:</span></td>
+                            <td colspan="1">@Html.DisplayFor(model => model.IdModeloNavigation.Traccion)</td>
+                        </tr>
+                        <tr>
+                            <td><span>Transmisión:</span></td>
+                            @if (Model.IdModeloNavigation.NombreModelo.Contains("GT3") || Model.IdModeloNavigation.NombreModelo.Contains("GT4") || Model.IdModeloNavigation.NombreModelo.Contains("911 Sport Classic II"))
+                            {
+                                <td colspan="1">Manual</td>
+                            }
+                            else
+                            {
+                                <td colspan="1">Automática PDK</td>
+                            }
+                        </tr>
+                        <tr>
+                            <td><span>Combustible:</span></td>
+                            <td colspan="1"> @Html.DisplayFor(model => model.IdModeloNavigation.Combustible)</td>
+                        </tr>
+                        <tr>
+                            <td><span>Pasajeros:</span></td>
+                            <td colspan="1">@Html.DisplayFor(model => model.IdModeloNavigation.Pasajeros)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="details-car_inv-equipamiento_Base">
+                <h4>Equipamiento</h4>
+
+                <ul>
+                    @foreach (var item in ViewBag.EquipamientoSerie)
+                    {
+                        <li>@item.NombreEquipamientoExtra</li>
+                    }
+                </ul>
+
+            </div>
+
+            <div class="details-car_inv-equipamiento_Extra">
+                <h4>Extras</h4>
+                @Html.DisplayFor(model => model.DescripcionEquipamientoExtra)
+            </div>
+        </div>
+    </div>
 </div>

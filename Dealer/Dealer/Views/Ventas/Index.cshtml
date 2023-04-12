@@ -1,0 +1,332 @@
+﻿@model IEnumerable<Dealer.Models.Venta>
+
+@{
+    ViewData["Title"] = "Listado de ventas";
+}
+
+<div class="lista_Ventas-table">
+    <h1>@ViewData["Title"]</h1>
+
+    <a asp-action="Create" class="btn btn-danger rounded-pill" style="display:flex;justify-content:center; width:14rem; gap: 3px;">
+
+        <lord-icon src="https://cdn.lordicon.com/ynwbvguu.json"
+                   trigger="hover"
+                   colors="primary:#ffffff"
+                   style="width:25px;height:25px;">
+        </lord-icon>
+        Realizar venta
+    </a>
+    <table class="table table-striped table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>
+                    Fecha
+                </th>
+                <th>
+                    Registro#
+                </th>
+                <th>
+                    Servicio oficial
+                </th>
+                <th>
+                    Vendedor
+                </th>
+                <th>
+                    Marca
+                </th>
+                <th>
+                    Modelo
+                </th>
+                <th>
+                    VIN
+                </th>
+                <th>
+                    Precio
+                </th>
+                <th>
+                    Cliente
+                </th>
+                <th>
+                    Fecha de entrega
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fecha)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Registro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdServicioOficialNavigation.NombreServicioOficial)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdVendedorNavigation.NombreVendedor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VinVehiculoPersonalizadoNavigation.IdMarcaNavigation.NombreMarca)
+                        @Html.DisplayFor(modelItem => item.VinVehiculoStockNavigation.IdMarcaNavigation.NombreMarca)
+                    </td>
+
+                    @if (item.VinVehiculoPersonalizado == null)
+                    {
+                        var id = item.VinVehiculoStockNavigation.IdModelo; // ID del modelo a consultar
+
+                        switch (id)
+                        {
+                            case 1:
+                                <td>911 Carrera</td>
+                                break;
+                            case 2:
+                                <td>911 Carrera S</td>
+                                break;
+                            case 3:
+                                <td>911 Carrera 4S</td>
+                                break;
+                            case 4:
+                                <td>911 Targa 4S</td>
+                                break;
+                            case 5:
+                                <td>911 Turbo</td>
+                                break;
+                            case 6:
+                                <td>911 Turbo S</td>
+                                break;
+                            case 7:
+                                <td>911 Turbo S Cabriolet</td>
+                                break;
+                            case 8:
+                                <td>911 GT3</td>
+                                break;
+                            case 9:
+                                <td>911 GT3 Touring</td>
+                                break;
+                            case 10:
+                                <td>911 GT3 RS</td>
+                                break;
+                            case 11:
+                                <td>911 Sport Classic II</td>
+                                break;
+                            case 16:
+                                <td>718 Cayman GTS 4.0"</td>
+                                break;
+                            case 20:
+                                <td>718 Boxter GTS 4.0"</td>
+                                break;
+                            case 21:
+                                <td>718 Cayman GT4"</td>
+                                break;
+                            case 23:
+                                <td>718 Spyder"</td>
+                                break;
+                            case 26:
+                                <td>718 Cayman GT4 RS"</td>
+                                break;
+                            case 27:
+                                <td>Taycan</td>
+                                break;
+                            case 29:
+                                <td>Taycan 4S</td>
+                                break;
+                            case 30:
+                                <td>Taycan GTS</td>
+                                break;
+                            case 31:
+                                <td>Taycan Turbo S</td>
+                                break;
+                            case 32:
+                                <td>Panamera GTS</td>
+                                break;
+                            case 33:
+                                <td>Panamera Turbo S</td>
+                                break;
+                            case 35:
+                                <td>Panamera Turbo S E-Hybrid</td>
+                                break;
+                            case 36:
+                                <td>Macan S</td>
+                                break;
+                            case 37:
+                                <td>Macan GTS</td>
+                                break;
+                            case 38:
+                                <td>Cayenne</td>
+                                break;
+                            case 40:
+                                <td>Cayenne S</td>
+                                break;
+                            case 41:
+                                <td>Cayenne Turbo S Coupé</td>
+                                break;
+                            case 42:
+                                <td>Cayenne Turbo GT</td>
+                                break;
+                            default:
+                                <td>911</td>
+                                break;
+                        }
+
+                    }
+                    else
+                    {
+                        var id = item.VinVehiculoPersonalizadoNavigation.IdModelo; // ID del modelo a consultar
+
+                        switch (id)
+                        {
+                            case 1:
+                                <td>911 Carrera</td>
+                                break;
+                            case 2:
+                                <td>911 Carrera S</td>
+                                break;
+                            case 3:
+                                <td>911 Carrera 4S</td>
+                                break;
+                            case 4:
+                                <td>911 Targa 4S</td>
+                                break;
+                            case 5:
+                                <td>911 Turbo</td>
+                                break;
+                            case 6:
+                                <td>911 Turbo S</td>
+                                break;
+                            case 7:
+                                <td>911 Turbo S Cabriolet</td>
+                                break;
+                            case 8:
+                                <td>911 GT3</td>
+                                break;
+                            case 9:
+                                <td>911 GT3 Touring</td>
+                                break;
+                            case 10:
+                                <td>911 GT3 RS</td>
+                                break;
+                            case 11:
+                                <td>911 Sport Classic II</td>
+                                break;
+                            case 16:
+                                <td>718 Cayman GTS 4.0"</td>
+                                break;
+                            case 20:
+                                <td>718 Boxter GTS 4.0"</td>
+                                break;
+                            case 21:
+                                <td>718 Cayman GT4"</td>
+                                break;
+                            case 23:
+                                <td>718 Spyder"</td>
+                                break;
+                            case 26:
+                                <td>718 Cayman GT4 RS"</td>
+                                break;
+                            case 27:
+                                <td>Taycan</td>
+                                break;
+                            case 29:
+                                <td>Taycan 4S</td>
+                                break;
+                            case 30:
+                                <td>Taycan GTS</td>
+                                break;
+                            case 31:
+                                <td>Taycan Turbo S</td>
+                                break;
+                            case 32:
+                                <td>Panamera GTS</td>
+                                break;
+                            case 33:
+                                <td>Panamera Turbo S</td>
+                                break;
+                            case 35:
+                                <td>Panamera Turbo S E-Hybrid</td>
+                                break;
+                            case 36:
+                                <td>Macan S</td>
+                                break;
+                            case 37:
+                                <td>Macan GTS</td>
+                                break;
+                            case 38:
+                                <td>Cayenne</td>
+                                break;
+                            case 40:
+                                <td>Cayenne S</td>
+                                break;
+                            case 41:
+                                <td>Cayenne Turbo S Coupé</td>
+                                break;
+                            case 42:
+                                <td>Cayenne Turbo GT</td>
+                                break;
+                            default:
+                                <td>911</td>
+                                break;
+                        }
+                    }
+
+
+                    @* @Html.DisplayFor(modelItem => item.VinVehiculoStockNavigation.IdModelo)
+                @Html.DisplayFor(modelItem => item.VinVehiculoPersonalizadoNavigation.IdModelo)*@
+
+
+                    <td>
+                        @if (item.VinVehiculoPersonalizado == null)
+                        {
+                            @Html.DisplayFor(modelItem => item.VinVehiculoStockNavigation.Vin)
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.VinVehiculoPersonalizadoNavigation.Vin)
+                        }
+                    </td>
+
+                    <td>
+
+                        @if (item.VinVehiculoPersonalizado == null)
+                        {
+                            @((item.VinVehiculoStockNavigation.Precio.HasValue ? "US$ " + item.VinVehiculoStockNavigation.Precio.Value.ToString("N2") : ""))
+                        }
+                        else
+                        {
+                            @((item.VinVehiculoPersonalizadoNavigation.Precio.HasValue ? "US$ " + item.VinVehiculoPersonalizadoNavigation.Precio.Value.ToString("N2") : ""))
+                        }
+                        @* @Html.DisplayFor(modelItem => item.VinVehiculoPersonalizadoNavigation.Precio)
+                    @Html.DisplayFor(modelItem => item.VinVehiculoStockNavigation.Precio)*@
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdClienteNavigation.NombreCliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaEntrega)
+                    </td>
+
+                    <td>
+
+                        <a asp-action="Edit" asp-route-id="@item.IdVenta" title="Editar" style="color:#263238;"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Details" asp-route-id="@item.IdVenta" title="Más detalles" style="color:#263238;">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.IdVenta" title="Eliminar venta" style="color:#263238;">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<span id="nombreModeloSpan"></span>
+
+
+
+
+

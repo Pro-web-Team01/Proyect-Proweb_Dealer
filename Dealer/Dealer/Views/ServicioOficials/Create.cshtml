@@ -1,0 +1,51 @@
+﻿@model Dealer.Models.ServicioOficial
+
+@{
+    ViewData["Title"] = "Agregar servicio oficial";
+}
+
+<h1 class="admin-header-title">@ViewData["Title"]</h1>
+
+<hr />
+<div class="row admin-actions-container">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdConcesionario" class="control-label">Concesionario</label>
+                <select asp-for="IdConcesionario" class ="form-control" asp-items="ViewBag.IdConcesionario"><option></option></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="NombreServicioOficial" class="control-label">Nombre Servicio</label>
+                <input asp-for="NombreServicioOficial" class="form-control" />
+                <span asp-validation-for="NombreServicioOficial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DomicilioServicioOficial" class="control-label">Domicilio</label>
+                <input asp-for="DomicilioServicioOficial" class="form-control" />
+                <span asp-validation-for="DomicilioServicioOficial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RncServicioOficial" class="control-label">RNC</label>
+                <input asp-for="RncServicioOficial" class="form-control" />
+                <span asp-validation-for="RncServicioOficial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImgConcesionario" class="control-label">Imagen de concesionario</label>
+                <input asp-for="ImgConcesionario" class="form-control" />
+                <span asp-validation-for="ImgConcesionario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="💾 Guardar" class="btn btn-dark" style="font-size: 1.2rem; font-weight: 600;" />
+            </div>
+        </form>
+    </div>
+    <div class="btn-regresar">
+        <a asp-action="Index" class="btn btn-warning" style="font-size: 1.2rem; font-weight: 600;">Regresar</a>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

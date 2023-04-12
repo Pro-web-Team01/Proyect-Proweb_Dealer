@@ -1,0 +1,47 @@
+﻿@model Dealer.Models.ServicioOficialVendedore
+
+@{
+    ViewData["Title"] = "Agregar vendedor";
+}
+
+<h1 class="admin-header-title">@ViewData["Title"]</h1>
+
+<hr />
+<div class="row admin-actions-container">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdServicioOficial" class="control-label">Servicio oficial</label>
+                <select asp-for="IdServicioOficial" class="form-control" asp-items="ViewBag.IdServicioOficial"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="NombreVendedor" class="control-label">Nombre/s y apellido/s</label>
+                <input asp-for="NombreVendedor" class="form-control" />
+                <span asp-validation-for="NombreVendedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CedulaVendedor" class="control-label">Cédula</label>
+                <input asp-for="CedulaVendedor" class="form-control" />
+                <span asp-validation-for="CedulaVendedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Domicilio" class="control-label">Domicilio</label>
+                <input asp-for="Domicilio" class="form-control" />
+                <span asp-validation-for="Domicilio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="💾 Guardar" class="btn btn-dark" style="font-size: 1.2rem; font-weight: 600;" />
+            </div>
+        </form>
+    </div>
+    <div class="btn-regresar">
+        <a asp-action="Index" class="btn btn-warning" style="font-size: 1.2rem; font-weight: 600;">Regresar</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

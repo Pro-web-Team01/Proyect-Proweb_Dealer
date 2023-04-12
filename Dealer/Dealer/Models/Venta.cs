@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Dealer.Models
 {
     public partial class Venta
     {
         public int IdVenta { get; set; }
+        [DataType(DataType.Date)]
         public DateTime? Fecha { get; set; }
         public string? Registro { get; set; }
         public int? IdConcesionario { get; set; }
@@ -18,6 +20,7 @@ namespace Dealer.Models
         public int? IdModelo { get; set; }
         public int? PrecioVehiculoStock { get; set; }
         public int? PrecioVehiculoPersonalizado { get; set; }
+        [DataType(DataType.Date)]
         public DateTime? FechaEntrega { get; set; }
         public int? MetodoPago { get; set; }
 

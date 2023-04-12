@@ -14,6 +14,7 @@ namespace Dealer.Models
         public int IdColorExterior { get; set; }
         public string? ColorExterior1 { get; set; }
         public decimal? PrecioColorExterior { get; set; }
+        public string? ColorHex { get; set; }
 
         public virtual ICollection<VehiculoPersonalizado> VehiculoPersonalizados { get; set; }
         public virtual ICollection<VehiculosStock> VehiculosStocks { get; set; }

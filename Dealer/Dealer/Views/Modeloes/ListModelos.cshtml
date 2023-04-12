@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Dealer.Models.Modelo>
+
+@{
+    ViewData["Title"] = "Listado de modelos";
+}
+
+<div class="admin-actions-container">
+
+    <h1>@ViewData["Title"]</h1>
+
+    <a asp-action="Create" class="btn btn-danger rounded-pill" style="display:flex;justify-content:center; width:18rem; gap: 3px; font-family:Montserrat; font-weight:600; font-size: 1.3rem; margin: 2rem 0;">
+
+        <lord-icon src="https://cdn.lordicon.com/ynwbvguu.json"
+                   trigger="hover"
+                   colors="primary:#ffffff"
+                   style="width:25px;height:25px;">
+        </lord-icon>
+        Agregar modelo
+    </a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Marca
+                </th>
+                <th>
+                    Modelo
+                </th>
+                <th>
+                    Potencia
+                </th>
+                <th>
+                    Cilindrada
+                </th>
+                <th>
+                    Combustible
+                </th>
+                <th>
+                    Pasajeros
+                </th>
+                <th>
+                    Tracción
+                </th>
+                <th>
+                    Precio base
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdMarcaNavigation.NombreMarca)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreModelo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Potencia) HP
+                    </td>
+                    
+                        @if(item.Cilindrada == "0" || item.Cilindrada == null)
+                        {
+                         <td>   Motor eléctrico </td>
+                        }
+                        else
+                        {
+                          <td>  @Html.DisplayFor(modelItem => item.Cilindrada) cil</td>
+                        }
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Combustible)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pasajeros)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Traccion)
+                    </td>
+                    <td>
+                       US$ @(( item.PrecioBase.ToString("N2")))
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdModelo" title="Editar" style="color:#263238;"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.IdModelo" title="Eliminar" style="color:#263238;">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

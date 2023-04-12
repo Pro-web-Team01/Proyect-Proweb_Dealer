@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Dealer.Models.ServicioOficialCliente>
+
+@{
+    ViewData["Title"] = "Listado de clientes";
+}
+<div class="admin-actions-container">
+
+    <h1>@ViewData["Title"]</h1>
+
+
+    <a asp-action="Create" class="btn btn-danger rounded-pill" style="display:flex;justify-content:center; width:20rem; gap: 3px; font-family:Montserrat; font-weight:600; font-size: 1.3rem; margin: 2rem 0;">
+
+        <lord-icon src="https://cdn.lordicon.com/ynwbvguu.json"
+                   trigger="hover"
+                   colors="primary:#ffffff"
+                   style="width:25px;height:25px;">
+        </lord-icon>
+        Agregar cliente
+    </a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nombre del cliente
+                </th>
+                <th>
+                    Cédula
+                </th>
+                <th>
+                    Teléfono
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreCliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CedulaCliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TelefonoCliente)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdCliente" title="Editar" style="color:#263238;"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.IdCliente" title="Eliminar" style="color:#263238;">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

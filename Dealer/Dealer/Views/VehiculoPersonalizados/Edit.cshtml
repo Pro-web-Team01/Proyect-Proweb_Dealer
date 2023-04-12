@@ -1,0 +1,159 @@
+﻿@model Dealer.Models.VehiculoPersonalizado
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>VehiculoPersonalizado</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdConstruccionVehiculo" />
+            <div class="form-group">
+                <label asp-for="IdMarca" class="control-label"></label>
+                <select asp-for="IdMarca" class="form-control" asp-items="ViewBag.IdMarca"></select>
+                <span asp-validation-for="IdMarca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdModelo" class="control-label"></label>
+                <select asp-for="IdModelo" class="form-control" asp-items="ViewBag.IdModelo"></select>
+                <span asp-validation-for="IdModelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vin" class="control-label"></label>
+                <input asp-for="Vin" class="form-control" />
+                <span asp-validation-for="Vin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColorExterior" class="control-label"></label>
+                <select asp-for="ColorExterior" class="form-control" asp-items="ViewBag.ColorExterior"></select>
+                <span asp-validation-for="ColorExterior" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColorInterior" class="control-label"></label>
+                <select asp-for="ColorInterior" class="form-control" asp-items="ViewBag.ColorInterior"></select>
+                <span asp-validation-for="ColorInterior" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra01" class="control-label"></label>
+                <select asp-for="Extra01" class="form-control" asp-items="ViewBag.Extra01"></select>
+                <span asp-validation-for="Extra01" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra02" class="control-label"></label>
+                <select asp-for="Extra02" class="form-control" asp-items="ViewBag.Extra02"></select>
+                <span asp-validation-for="Extra02" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra03" class="control-label"></label>
+                <select asp-for="Extra03" class="form-control" asp-items="ViewBag.Extra03"></select>
+                <span asp-validation-for="Extra03" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra04" class="control-label"></label>
+                <select asp-for="Extra04" class="form-control" asp-items="ViewBag.Extra04"></select>
+                <span asp-validation-for="Extra04" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra05" class="control-label"></label>
+                <select asp-for="Extra05" class="form-control" asp-items="ViewBag.Extra05"></select>
+                <span asp-validation-for="Extra05" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra06" class="control-label"></label>
+                <select asp-for="Extra06" class="form-control" asp-items="ViewBag.Extra06"></select>
+                <span asp-validation-for="Extra06" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra07" class="control-label"></label>
+                <select asp-for="Extra07" class="form-control" asp-items="ViewBag.Extra07"></select>
+                <span asp-validation-for="Extra07" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra08" class="control-label"></label>
+                <select asp-for="Extra08" class="form-control" asp-items="ViewBag.Extra08"></select>
+                <span asp-validation-for="Extra08" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra09" class="control-label"></label>
+                <select asp-for="Extra09" class="form-control" asp-items="ViewBag.Extra09"></select>
+                <span asp-validation-for="Extra09" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra10" class="control-label"></label>
+                <select asp-for="Extra10" class="form-control" asp-items="ViewBag.Extra10"></select>
+                <span asp-validation-for="Extra10" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra11" class="control-label"></label>
+                <select asp-for="Extra11" class="form-control" asp-items="ViewBag.Extra11"></select>
+                <span asp-validation-for="Extra11" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra12" class="control-label"></label>
+                <select asp-for="Extra12" class="form-control" asp-items="ViewBag.Extra12"></select>
+                <span asp-validation-for="Extra12" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra13" class="control-label"></label>
+                <select asp-for="Extra13" class="form-control" asp-items="ViewBag.Extra13"></select>
+                <span asp-validation-for="Extra13" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra14" class="control-label"></label>
+                <select asp-for="Extra14" class="form-control" asp-items="ViewBag.Extra14"></select>
+                <span asp-validation-for="Extra14" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra15" class="control-label"></label>
+                <select asp-for="Extra15" class="form-control" asp-items="ViewBag.Extra15"></select>
+                <span asp-validation-for="Extra15" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra16" class="control-label"></label>
+                <select asp-for="Extra16" class="form-control" asp-items="ViewBag.Extra16"></select>
+                <span asp-validation-for="Extra16" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra17" class="control-label"></label>
+                <select asp-for="Extra17" class="form-control" asp-items="ViewBag.Extra17"></select>
+                <span asp-validation-for="Extra17" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra18" class="control-label"></label>
+                <select asp-for="Extra18" class="form-control" asp-items="ViewBag.Extra18"></select>
+                <span asp-validation-for="Extra18" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra19" class="control-label"></label>
+                <select asp-for="Extra19" class="form-control" asp-items="ViewBag.Extra19"></select>
+                <span asp-validation-for="Extra19" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra20" class="control-label"></label>
+                <select asp-for="Extra20" class="form-control" asp-items="ViewBag.Extra20"></select>
+                <span asp-validation-for="Extra20" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

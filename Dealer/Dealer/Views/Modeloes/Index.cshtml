@@ -1,0 +1,189 @@
+﻿@model IEnumerable<Dealer.Models.Modelo>
+
+@{
+    ViewData["Title"] = "Elige tu Porsche";
+}
+
+<h1 class="card-modelos-headerTitle">@ViewData["Title"]</h1>
+
+<div class="car-modelos-container">
+    @foreach (var item in Model)
+    {
+        <div class="car-modelos-card" data-idmodelo="@item.IdModelo">
+            <div class="car-modelos-img">
+                <img src="@Html.DisplayFor(modelItem => item.ImgModelo)" />
+            </div>
+            <div class="car-modelo-name">
+                <span>@Html.DisplayFor(modelItem => item.NombreModelo)</span>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function () {
+            $('.car-modelos-card').click(function () {
+                var idModelo = $(this).data('idmodelo');
+                $.ajax({
+                    type: "GET",
+                    url: "/VehiculoPersonalizados/Create",
+                    data: { idModelo: idModelo },
+                    success: function () {
+                        window.location.href = "/VehiculoPersonalizados/Create?idModelo=" + idModelo;
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+
+
+}
+
+@*<div class="car-modelos-container">
+    @foreach (var item in Model)
+    {
+        <div class="car-modelos-card">
+            <div class="car-modelos-img">
+                <img src="@Html.DisplayFor(modelItem => item.ImgModelo)" />
+            </div>
+            <div class="car-modelo-name">
+                <span>@Html.DisplayFor(modelItem => item.NombreModelo)</span>
+            </div>
+        </div>
+    }
+</div>*@
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreModelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Potencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cilindrada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Combustible)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pasajeros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Traccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioBase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgModelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgModelo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgModelo3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgModelo4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgModelo5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgModelo6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMarcaNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreModelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Potencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cilindrada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Combustible)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pasajeros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Traccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioBase)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImgModelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImgModelo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImgModelo3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImgModelo4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImgModelo5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImgModelo6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdMarcaNavigation.IdMarca)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdModelo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdModelo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdModelo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@
+
+
+
+
+
+
+
+
+
+
+@*    <div class="car-modelos-container">
+
+        <div class="car-modelos-card">
+            <div class="car-modelos-img">
+                <img src="https://files.porsche.com/filestore/image/multimedia/none/9ya-e3-s-modelimage-sideshot/model/cdd82dab-a8d3-11eb-80d5-005056bbdc38/porsche-model.png" />
+            </div>
+            <div class="car-modelo-name">
+                <span>Porsche Cayenne</span>
+            </div>
+        </div>
+    </div>*@

@@ -1,0 +1,185 @@
+﻿@model IEnumerable<Dealer.Models.VehiculoPersonalizado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Vin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColorExteriorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ColorInteriorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra01Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra02Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra03Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra04Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra05Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra06Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra07Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra08Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra09Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra10Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra11Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra12Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra13Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra14Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra15Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra16Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra17Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra18Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra19Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extra20Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMarcaNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdModeloNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColorExteriorNavigation.IdColorExterior)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ColorInteriorNavigation.IdColorInterior)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra01Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra02Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra03Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra04Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra05Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra06Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra07Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra08Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra09Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra10Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra11Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra12Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra13Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra14Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra15Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra16Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra17Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra18Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra19Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra20Navigation.IdEquipamientoExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdMarcaNavigation.IdMarca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdModeloNavigation.IdModelo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdConstruccionVehiculo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdConstruccionVehiculo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdConstruccionVehiculo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

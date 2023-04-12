@@ -1,4 +1,5 @@
 ﻿using Dealer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -29,6 +30,12 @@ namespace Dealer.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        /*[Authorize]*/
+        public IActionResult Admin()
+        {
+            return View();
         }
     }
 }

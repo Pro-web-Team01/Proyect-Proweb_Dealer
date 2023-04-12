@@ -1,0 +1,38 @@
+﻿@model Dealer.Models.EquipamientoExtra
+
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+
+<div class="admin-actions-container">
+    <h1>Eliminar</h1>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Equipamiento extra:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreEquipamientoExtra)
+        </dd>
+        <dt class = "col-sm-2">
+            Precio:
+        </dt>
+        <dd class = "col-sm-10">
+            @((Model.Precio.HasValue ? "US$ " + Model.Precio.Value.ToString("N2") : ""))
+        </dd>
+        <dt class = "col-sm-2">
+            Modelo a que aplica:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdModeloNavigation.NombreModelo)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdEquipamientoExtra" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-warning">Regresar</a>
+    </form>
+</div>

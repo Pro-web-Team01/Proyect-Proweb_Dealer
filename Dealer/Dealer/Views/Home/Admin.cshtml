@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Administrador";
+}
+
+<h1 class="page-admin-header_title admin-header-title">Administrar Servicio Oficial</h1>
+
+<div class="page-admin-container">
+
+    <div class="page-admin-colores page-admin-card">
+        <h4>Colores</h4>
+        <a asp-controller="ColorExteriors" asp-action="Index" class="btn btn-danger">Colores de exterior</a>
+        <a asp-controller="ColorInteriors" asp-action="Index" class="btn btn-dark">Colores de interior</a>
+    </div>
+    <div class="page-admin-servicio_oficial page-admin-card">
+        <h4>Servicio oficial</h4>
+        <a asp-controller="ServicioOficials" asp-action="Index" class="btn btn-danger">Admin. Servicio Oficial</a>
+        <a asp-controller="ServicioOficialVendedores" asp-action="Index" class="btn btn-secondary">Vendedores</a>
+        <a asp-controller="ServicioOficialClientes" asp-action="Index" class="btn btn-dark">Clientes</a>
+    </div>
+    <div class="page-admin-marca_modelo page-admin-card">
+        <h4>Marcas y modelos</h4>
+        <a asp-controller="Marcas" asp-action="Index" class="btn btn-danger">Admin. Marcas</a>
+        <a asp-controller="Modeloes" asp-action="ListModelos" class="btn btn-dark">Admin. Modelos</a>
+    </div>
+    <div class="page-admin-equipamiento page-admin-card">
+        <h4>Equipamiento</h4>
+        <a asp-controller="EquipamientoExtras" asp-action="Index" class="btn btn-danger">Admin. Equipamiento extra</a>
+        <a asp-controller="EquipamientoSeries" asp-action="Index" class="btn btn-dark">Admin. Equipamiento de serie</a>
+    </div>
+</div>

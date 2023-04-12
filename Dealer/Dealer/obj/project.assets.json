@@ -10459,19 +10459,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\diego\\.nuget\\packages\\": {}
+    "C:\\Users\\ivanl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Dealer\\Dealer\\Dealer.csproj",
+      "projectUniqueName": "C:\\Users\\ivanl\\Desktop\\Proweb-v3\\Dealer\\Dealer\\Dealer.csproj",
       "projectName": "Dealer",
-      "projectPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Dealer\\Dealer\\Dealer.csproj",
-      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProgWeb\\Dealer\\Dealer\\obj\\",
+      "projectPath": "C:\\Users\\ivanl\\Desktop\\Proweb-v3\\Dealer\\Dealer\\Dealer.csproj",
+      "packagesPath": "C:\\Users\\ivanl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ivanl\\Desktop\\Proweb-v3\\Dealer\\Dealer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ivanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10541,7 +10541,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

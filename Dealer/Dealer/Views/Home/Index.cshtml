@@ -4,70 +4,36 @@
     ViewData["Title"] = "Inicio";
 }
 
-@*<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>*@
-
-@*<div class="header-container">
-
-    <a href="#" class="nav-bar-logo">
-        <img src="https://logos-world.net/wp-content/uploads/2021/04/Porsche-Logo.png" alt="logo">
-    </a>
-
-    <nav class="nav-bar">
-
-        <ul class="nav-bar-list">
-
-            <li class="nav-bar-item">
-                <a href="#">Shop +</a>
-                <ul class="nav-bar-dropdown">
-                    <li class="nav-bar-dropdown-item"><a href="#">Vehículos Nuevos</a></li>
-                    <li class="nav-bar-dropdown-item"><a href="#">Vehículos de Reestreno</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-bar-item"><a href="#">Servicios</a></li>
-
-            <li class="nav-bar-item">
-                <a href="#">Más +</a>
-                <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Localización</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </li>
-
-        </ul>
-
-    </nav>
-
-</div>
-
-*@
-
 <div class="Home-Hero">
-    <div class="container">
-        <h1><span>Porsche Center</span></h1>
-        <span class="cen">Your page to Buy</span>
-        <a href="#" class="button">Click Here</a>
+    <div class="Home-Hero-img">
+        <img src="https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Home-Page/Dealer/Porsche-Center-DominicanRepublic-Desktop-2.jpg?rev=20dd0ab307914496bef6d5649b0a97b1&w=1920" />
     </div>
+    <div class="Home-Hero-img">
+        <img src="https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Porsche-Approved/Update/PorscheApproved_Slider_Desk_ESP.jpg?rev=0ab55db1a8d9408aa679a975c67d2ede&w=1920" />
+    </div>
+    <div class="Home-Hero-img">
+        <img src="https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Garantia-Extendida-Porsche-Approved/Update-01-23/Garantia_Extendida_Slider_Desk.jpg?rev=bdee8d0100204722932d69dd855161e0&w=1920" />
+    </div>
+    <div class="Home-Hero-img">
+        <img src="https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Porsche-Approved/Update/PorscheApproved_Slider_Desk_ESP.jpg?rev=0ab55db1a8d9408aa679a975c67d2ede&w=1920" />
+    </div>
+
 </div>
+
+
 
 <div class="Home-banners">
 
     <h2 class="home-headers">Nuestros vehículos</h2>
 
     <div class="Home-banners-container">
-        <div class="Home-banners-content">
-            <a href="">
-                <img src="https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Nuestros-modelos-Autos-nuevos/Vehiculos-nuevos-PLA-desktop.jpg?rev=27b7b4e4090b4eb1bb69c7104af51119" />
+        <div class="Home-banners-content banner-content-1">
+            <a asp-controller="VehiculosStocks" asp-action="Index">
                 <span><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>Vehículos nuevos</span>
             </a>
         </div>
-        <div class="Home-banners-content">
-            <a href="">
-                <img src="https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/SharedDealersWebsite/Model-Teaser/911/CZ21V00OX0010_rgb.jpg?rev=-1" />
+        <div class="Home-banners-content banner-content-2">
+            <a asp-controller="VehiculosStocks" asp-action="Index">
                 <span><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>Vehículos de reestreno</span>
             </a>
         </div>
@@ -76,7 +42,7 @@
 </div>
 
 <div class="Home-build">
-    <h2 class="home-headers">Crea tu Porsche</h2>
+    <h2 class="home-headers">Diseña tu Porsche</h2>
 
     <div class="Home-build-content">
         <div class="Home-build-imgContainer">
@@ -92,7 +58,7 @@
 
             <div class="Home-build-imgContainer-configuratorBtn">
                 <i class='bx bx-cog'></i>
-                <a>Ir al configurador</a>
+                <a asp-controller="Modeloes" asp-action="Index">Ir al configurador</a>
             </div>
         </div>
     </div>
@@ -174,7 +140,7 @@
         </div>
 
         <p>
-            *Test Drive sujeto a disponibilidad previa coordinación y confirmación con un ejecutivo comercial.</span>
+            <span>*Test Drive sujeto a disponibilidad previa coordinación y confirmación con un ejecutivo comercial.</span>
 
             <div class="form-group">
                 <input type="submit" class="btn btn-danger" value="Enviar" />
@@ -182,7 +148,7 @@
     </form>
 </div>
 
-<div class="Home-contact">
+<div class="Home-contact" id="Home-contact">
     <h4 class="home-headers">Dirección y contacto</h4>
     <div class="Home-contact-content">
         <div class="Home-contact-maps">

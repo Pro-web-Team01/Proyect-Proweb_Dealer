@@ -24,6 +24,11 @@ namespace Dealer.Models
         public string Traccion { get; set; } = null!;
         public decimal PrecioBase { get; set; }
         public string? ImgModelo { get; set; }
+        public string? ImgModelo2 { get; set; }
+        public string? ImgModelo3 { get; set; }
+        public string? ImgModelo4 { get; set; }
+        public string? ImgModelo5 { get; set; }
+        public string? ImgModelo6 { get; set; }
 
         public virtual Marca? IdMarcaNavigation { get; set; }
         public virtual ICollection<EquipamientoExtra> EquipamientoExtras { get; set; }

@@ -1,0 +1,45 @@
+﻿@model Dealer.Models.ServicioOficial
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+
+<div class="admin-actions-container">
+    <h1>Eliminar</h1>
+
+    <h3 style="font-size:1rem;">¿Seguro que quiere eliminar?</h3>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Servicio oficial
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreServicioOficial)
+        </dd>
+        <dt class = "col-sm-2">
+            Domicilio
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DomicilioServicioOficial)
+        </dd>
+        <dt class = "col-sm-2">
+            RNC
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RncServicioOficial)
+        </dd>
+        <dt class = "col-sm-2">
+            Concesionario
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdConcesionarioNavigation.NombreConcesionario)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdServicioOficial" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-warning">Regresar</a>
+    </form>
+</div>

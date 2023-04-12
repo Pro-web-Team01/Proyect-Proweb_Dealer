@@ -1,0 +1,40 @@
+﻿@model Dealer.Models.Marca
+
+@{
+    ViewData["Title"] = "Editar marca";
+}
+
+<h1 class="admin-header-title">@ViewData["Title"]</h1>
+
+<hr />
+<div class="row admin-actions-container">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdMarca" />
+            <div class="form-group">
+                <label asp-for="NombreMarca" class="control-label">Nombre de la marca</label>
+                <input asp-for="NombreMarca" class="form-control" />
+                <span asp-validation-for="NombreMarca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UrlLogoMarca" class="control-label">Link de img de logo de la marca</label>
+                <input asp-for="UrlLogoMarca" class="form-control" />
+                <span asp-validation-for="UrlLogoMarca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="💾 Guardar" class="btn btn-dark" style="font-size: 1.2rem; font-weight: 600;" />
+            </div>
+        </form>
+    </div>
+    <div class="btn-regresar">
+        <a asp-action="Index" class="btn btn-warning" style="font-size: 1.2rem; font-weight: 600;">Regresar</a>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

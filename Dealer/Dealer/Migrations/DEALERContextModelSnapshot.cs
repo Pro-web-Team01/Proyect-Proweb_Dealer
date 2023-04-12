@@ -97,6 +97,27 @@ namespace Dealer.Migrations
                     b.ToTable("concesionario", (string)null);
                 });
 
+            modelBuilder.Entity("Dealer.Models.CondicionVehiculo", b =>
+                {
+                    b.Property<int>("IdCondicion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id_condicion");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCondicion"), 1L, 1);
+
+                    b.Property<string>("Condicion")
+                        .HasMaxLength(50)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("condicion");
+
+                    b.HasKey("IdCondicion")
+                        .HasName("PK__condicio__C9237400CCCF1079");
+
+                    b.ToTable("condicion_vehiculo", (string)null);
+                });
+
             modelBuilder.Entity("Dealer.Models.EquipamientoExtra", b =>
                 {
                     b.Property<int>("IdEquipamientoExtra")
@@ -127,7 +148,7 @@ namespace Dealer.Migrations
                     b.HasKey("IdEquipamientoExtra")
                         .HasName("PK__equipami__E517FE91DF344DC9");
 
-                    b.HasIndex("IdModelo");
+                    b.HasIndex(new[] { "IdModelo" }, "IX_equipamiento_extra_id_modelo");
 
                     b.ToTable("equipamiento_extra", (string)null);
                 });
@@ -155,7 +176,7 @@ namespace Dealer.Migrations
                     b.HasKey("IdEquipamientoSerie")
                         .HasName("PK__equipami__FA575F32D8200466");
 
-                    b.HasIndex("IdModelo");
+                    b.HasIndex(new[] { "IdModelo" }, "IX_equipamiento_serie_id_modelo");
 
                     b.ToTable("equipamiento_serie", (string)null);
                 });
@@ -276,7 +297,7 @@ namespace Dealer.Migrations
                     b.HasKey("IdModelo")
                         .HasName("PK__modelo__B3BFCFF1FF4D45DF");
 
-                    b.HasIndex("IdMarca");
+                    b.HasIndex(new[] { "IdMarca" }, "IX_modelo_id_marca");
 
                     b.ToTable("modelo", (string)null);
                 });
@@ -317,7 +338,7 @@ namespace Dealer.Migrations
                     b.HasKey("IdServicioOficial")
                         .HasName("PK__servicio__50B63F8234B1E4DA");
 
-                    b.HasIndex("IdConcesionario");
+                    b.HasIndex(new[] { "IdConcesionario" }, "IX_servicio_oficial_id_concesionario");
 
                     b.ToTable("servicio_oficial", (string)null);
                 });
@@ -391,7 +412,7 @@ namespace Dealer.Migrations
                     b.HasKey("IdVendedor")
                         .HasName("PK__servicio__0093030840C18B5E");
 
-                    b.HasIndex("IdServicioOficial");
+                    b.HasIndex(new[] { "IdServicioOficial" }, "IX_servicio_oficial_vendedores_id_servicio_oficial");
 
                     b.ToTable("servicio_oficial_vendedores", (string)null);
                 });
@@ -514,53 +535,53 @@ namespace Dealer.Migrations
                     b.HasKey("IdConstruccionVehiculo")
                         .HasName("PK__vehiculo__712ECA30B9B48AEF");
 
-                    b.HasIndex("ColorExterior");
+                    b.HasIndex(new[] { "ColorExterior" }, "IX_vehiculo_personalizado_color_exterior");
 
-                    b.HasIndex("ColorInterior");
+                    b.HasIndex(new[] { "ColorInterior" }, "IX_vehiculo_personalizado_color_interior");
 
-                    b.HasIndex("Extra01");
+                    b.HasIndex(new[] { "Extra01" }, "IX_vehiculo_personalizado_extra_01");
 
-                    b.HasIndex("Extra02");
+                    b.HasIndex(new[] { "Extra02" }, "IX_vehiculo_personalizado_extra_02");
 
-                    b.HasIndex("Extra03");
+                    b.HasIndex(new[] { "Extra03" }, "IX_vehiculo_personalizado_extra_03");
 
-                    b.HasIndex("Extra04");
+                    b.HasIndex(new[] { "Extra04" }, "IX_vehiculo_personalizado_extra_04");
 
-                    b.HasIndex("Extra05");
+                    b.HasIndex(new[] { "Extra05" }, "IX_vehiculo_personalizado_extra_05");
 
-                    b.HasIndex("Extra06");
+                    b.HasIndex(new[] { "Extra06" }, "IX_vehiculo_personalizado_extra_06");
 
-                    b.HasIndex("Extra07");
+                    b.HasIndex(new[] { "Extra07" }, "IX_vehiculo_personalizado_extra_07");
 
-                    b.HasIndex("Extra08");
+                    b.HasIndex(new[] { "Extra08" }, "IX_vehiculo_personalizado_extra_08");
 
-                    b.HasIndex("Extra09");
+                    b.HasIndex(new[] { "Extra09" }, "IX_vehiculo_personalizado_extra_09");
 
-                    b.HasIndex("Extra10");
+                    b.HasIndex(new[] { "Extra10" }, "IX_vehiculo_personalizado_extra_10");
 
-                    b.HasIndex("Extra11");
+                    b.HasIndex(new[] { "Extra11" }, "IX_vehiculo_personalizado_extra_11");
 
-                    b.HasIndex("Extra12");
+                    b.HasIndex(new[] { "Extra12" }, "IX_vehiculo_personalizado_extra_12");
 
-                    b.HasIndex("Extra13");
+                    b.HasIndex(new[] { "Extra13" }, "IX_vehiculo_personalizado_extra_13");
 
-                    b.HasIndex("Extra14");
+                    b.HasIndex(new[] { "Extra14" }, "IX_vehiculo_personalizado_extra_14");
 
-                    b.HasIndex("Extra15");
+                    b.HasIndex(new[] { "Extra15" }, "IX_vehiculo_personalizado_extra_15");
 
-                    b.HasIndex("Extra16");
+                    b.HasIndex(new[] { "Extra16" }, "IX_vehiculo_personalizado_extra_16");
 
-                    b.HasIndex("Extra17");
+                    b.HasIndex(new[] { "Extra17" }, "IX_vehiculo_personalizado_extra_17");
 
-                    b.HasIndex("Extra18");
+                    b.HasIndex(new[] { "Extra18" }, "IX_vehiculo_personalizado_extra_18");
 
-                    b.HasIndex("Extra19");
+                    b.HasIndex(new[] { "Extra19" }, "IX_vehiculo_personalizado_extra_19");
 
-                    b.HasIndex("Extra20");
+                    b.HasIndex(new[] { "Extra20" }, "IX_vehiculo_personalizado_extra_20");
 
-                    b.HasIndex("IdMarca");
+                    b.HasIndex(new[] { "IdMarca" }, "IX_vehiculo_personalizado_id_marca");
 
-                    b.HasIndex("IdModelo");
+                    b.HasIndex(new[] { "IdModelo" }, "IX_vehiculo_personalizado_id_modelo");
 
                     b.ToTable("vehiculo_personalizado", (string)null);
                 });
@@ -587,6 +608,10 @@ namespace Dealer.Migrations
                     b.Property<int?>("ColorInterior")
                         .HasColumnType("int")
                         .HasColumnName("color_interior");
+
+                    b.Property<int?>("Condicion")
+                        .HasColumnType("int")
+                        .HasColumnName("condicion");
 
                     b.Property<string>("DescripcionEquipamientoExtra")
                         .HasColumnType("text")
@@ -617,13 +642,15 @@ namespace Dealer.Migrations
                     b.HasKey("IdVehiculoStock")
                         .HasName("PK__vehiculo__2C97B5734C4173AF");
 
-                    b.HasIndex("ColorExterior");
+                    b.HasIndex("Condicion");
 
-                    b.HasIndex("ColorInterior");
+                    b.HasIndex(new[] { "ColorExterior" }, "IX_vehiculos_stock_color_exterior");
 
-                    b.HasIndex("IdMarca");
+                    b.HasIndex(new[] { "ColorInterior" }, "IX_vehiculos_stock_color_interior");
 
-                    b.HasIndex("IdModelo");
+                    b.HasIndex(new[] { "IdMarca" }, "IX_vehiculos_stock_id_marca");
+
+                    b.HasIndex(new[] { "IdModelo" }, "IX_vehiculos_stock_id_modelo");
 
                     b.ToTable("vehiculos_stock", (string)null);
                 });
@@ -747,27 +774,27 @@ namespace Dealer.Migrations
                     b.HasKey("IdVenta")
                         .HasName("PK__ventas__459533BF48EE8E87");
 
-                    b.HasIndex("IdCliente");
+                    b.HasIndex(new[] { "VinVehiculoPersonalizado" }, "IX_ventas_VIN_vehiculo_personalizado");
 
-                    b.HasIndex("IdConcesionario");
+                    b.HasIndex(new[] { "VinVehiculoStock" }, "IX_ventas_VIN_vehiculo_stock");
 
-                    b.HasIndex("IdMarca");
+                    b.HasIndex(new[] { "IdCliente" }, "IX_ventas_id_cliente");
 
-                    b.HasIndex("IdModelo");
+                    b.HasIndex(new[] { "IdConcesionario" }, "IX_ventas_id_concesionario");
 
-                    b.HasIndex("IdServicioOficial");
+                    b.HasIndex(new[] { "IdMarca" }, "IX_ventas_id_marca");
 
-                    b.HasIndex("IdVendedor");
+                    b.HasIndex(new[] { "IdModelo" }, "IX_ventas_id_modelo");
 
-                    b.HasIndex("MetodoPago");
+                    b.HasIndex(new[] { "IdServicioOficial" }, "IX_ventas_id_servicio_oficial");
 
-                    b.HasIndex("PrecioVehiculoPersonalizado");
+                    b.HasIndex(new[] { "IdVendedor" }, "IX_ventas_id_vendedor");
 
-                    b.HasIndex("PrecioVehiculoStock");
+                    b.HasIndex(new[] { "MetodoPago" }, "IX_ventas_metodo_pago");
 
-                    b.HasIndex("VinVehiculoPersonalizado");
+                    b.HasIndex(new[] { "PrecioVehiculoPersonalizado" }, "IX_ventas_precio_vehiculo_personalizado");
 
-                    b.HasIndex("VinVehiculoStock");
+                    b.HasIndex(new[] { "PrecioVehiculoStock" }, "IX_ventas_precio_vehiculo_stock");
 
                     b.ToTable("ventas", (string)null);
                 });
@@ -1005,6 +1032,11 @@ namespace Dealer.Migrations
                         .HasForeignKey("ColorInterior")
                         .HasConstraintName("fk_vehiculoStock_color_interior");
 
+                    b.HasOne("Dealer.Models.CondicionVehiculo", "CondicionNavigation")
+                        .WithMany("VehiculosStocks")
+                        .HasForeignKey("Condicion")
+                        .HasConstraintName("FK_vehiculo_condicion");
+
                     b.HasOne("Dealer.Models.Marca", "IdMarcaNavigation")
                         .WithMany("VehiculosStocks")
                         .HasForeignKey("IdMarca")
@@ -1018,6 +1050,8 @@ namespace Dealer.Migrations
                     b.Navigation("ColorExteriorNavigation");
 
                     b.Navigation("ColorInteriorNavigation");
+
+                    b.Navigation("CondicionNavigation");
 
                     b.Navigation("IdMarcaNavigation");
 
@@ -1123,6 +1157,11 @@ namespace Dealer.Migrations
                     b.Navigation("ServicioOficials");
 
                     b.Navigation("Venta");
+                });
+
+            modelBuilder.Entity("Dealer.Models.CondicionVehiculo", b =>
+                {
+                    b.Navigation("VehiculosStocks");
                 });
 
             modelBuilder.Entity("Dealer.Models.EquipamientoExtra", b =>

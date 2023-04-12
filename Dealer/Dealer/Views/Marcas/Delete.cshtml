@@ -1,0 +1,26 @@
+﻿@model Dealer.Models.Marca
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+
+<div class="admin-actions-container">
+    <h4>@ViewData["Title"] marca</h4>
+    <h3 style="font-size:1rem;">¿Seguro que quiere eliminar?</h3>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Marca
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreMarca)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdMarca" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-warning">Regresar</a>
+    </form>
+</div>

@@ -58,6 +58,10 @@ namespace Dealer.Models
                     .IsUnicode(false)
                     .HasColumnName("color_exterior");
 
+                entity.Property(e => e.ColorHex)
+                    .HasMaxLength(8)
+                    .HasColumnName("color_hex");
+
                 entity.Property(e => e.PrecioColorExterior)
                     .HasColumnType("decimal(10, 2)")
                     .HasColumnName("precio_color_exterior");
@@ -234,6 +238,26 @@ namespace Dealer.Models
                     .HasMaxLength(500)
                     .IsUnicode(false)
                     .HasColumnName("img_modelo");
+
+                entity.Property(e => e.ImgModelo2)
+                    .HasColumnType("text")
+                    .HasColumnName("img_modelo_2");
+
+                entity.Property(e => e.ImgModelo3)
+                    .HasColumnType("text")
+                    .HasColumnName("img_modelo_3");
+
+                entity.Property(e => e.ImgModelo4)
+                    .HasColumnType("text")
+                    .HasColumnName("img_modelo_4");
+
+                entity.Property(e => e.ImgModelo5)
+                    .HasColumnType("text")
+                    .HasColumnName("img_modelo_5");
+
+                entity.Property(e => e.ImgModelo6)
+                    .HasColumnType("text")
+                    .HasColumnName("img_modelo_6");
 
                 entity.Property(e => e.NombreModelo)
                     .HasMaxLength(200)
@@ -608,6 +632,8 @@ namespace Dealer.Models
 
                 entity.HasIndex(e => e.ColorInterior, "IX_vehiculos_stock_color_interior");
 
+                entity.HasIndex(e => e.Condicion, "IX_vehiculos_stock_condicion");
+
                 entity.HasIndex(e => e.IdMarca, "IX_vehiculos_stock_id_marca");
 
                 entity.HasIndex(e => e.IdModelo, "IX_vehiculos_stock_id_modelo");
@@ -636,6 +662,30 @@ namespace Dealer.Models
                 entity.Property(e => e.Img)
                     .HasColumnType("text")
                     .HasColumnName("img");
+
+                entity.Property(e => e.Img2)
+                    .HasColumnType("text")
+                    .HasColumnName("img_2");
+
+                entity.Property(e => e.Img3)
+                    .HasColumnType("text")
+                    .HasColumnName("img_3");
+
+                entity.Property(e => e.Img4)
+                    .HasColumnType("text")
+                    .HasColumnName("img_4");
+
+                entity.Property(e => e.Img5)
+                    .HasColumnType("text")
+                    .HasColumnName("img_5");
+
+                entity.Property(e => e.Img6)
+                    .HasColumnType("text")
+                    .HasColumnName("img_6");
+
+                entity.Property(e => e.Img7)
+                    .HasColumnType("text")
+                    .HasColumnName("img_7");
 
                 entity.Property(e => e.Precio)
                     .HasColumnType("decimal(10, 2)")

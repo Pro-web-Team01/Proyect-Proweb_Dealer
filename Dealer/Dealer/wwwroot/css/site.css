@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-
-/*@media (min-width: 1200px) {
-    #container .container {
-        width: 90% !important;
-    }
-}*/
-
 @media (min-width: 768px) {
     html {
         font-size: 16px;
@@ -26,180 +19,152 @@ html {
 
 body {
     margin-bottom: 60px;
-}
-
-/*.header-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
-    box-shadow: 0 5px 10px #e9e1e1;
-    padding: 0px 5%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-bar-logo img {
-    margin-top: 50px;
-    width: 60px;
-    height: 78px;
-}
-
-.header-container .nav-bar .nav-bar-list {
-    list-style: none;
-}
-
-.nav-bar-item {
-    margin-left: 15px;
-    position: relative;
-    float: left;
-}
-
-    .nav-bar-item a {
-        font-size: 20px;
-        font-weight: bold;
-        padding: 20px;
-        color: #000000;
-    }
-
-        .nav-bar-item a:hover {
-            color: #bd9f0c;
-        }
-
-    .nav-bar-item ul {
-        position: absolute;
-        left: -30px;
-        top: 30px;
-        width: 160px;
-        padding: 15px;
-        background-color: #4f4f4f35;
-        border-radius: 6px;
-        visibility: hidden;
-        opacity: 0;
-        z-index: 10;
-        transition: all 450ms ease-in-out;
-    }
-
-    .nav-bar-item:hover ul {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .nav-bar-item ul li {
-        margin: 15px 12px 25px;
-        list-style: none;
-        width: 100%;
-    }
-
-        .nav-bar-item ul li a {
-            padding: 0;
-            font-size: 16px;
-            color: #000000;
-        }
-
-            .nav-bar-item ul li a:hover {
-                color: #b20b0b;
-            }
-*/
-.Home-Hero {
-    position: relative;
-    background: url(https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Home-Page/Dealer/Porsche-Center-DominicanRepublic-Desktop-2.jpg?rev=20dd0ab307914496bef6d5649b0a97b1) no-repeat center;
-    background-size: cover;
-    height: 500px;  
-    width: 100%;
-    overflow: hidden;
-}
-
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-    .container h1 {
-        margin: 0;
-        font-size: 66px;
-    }
-
-        .container h1 span {
-            border: 6px solid #fff;
-            padding: 6px 14px;
-            display: inline-block;
-        }
-
-.cen {
-    margin: 20px;
-    display: block;
-    font-size: 22px;
-}
-
-.button {
-    color: #fff;
-    padding: 10px 24px;
-    background-color: #000;
-    text-decoration: none;
-    border-radius: 12px;
-    transition: .6s;
-
-}
-
-    .button:hover {
-        opacity: .6;
-    }
-/*.Home-hero-slides {
-    position: relative;
-    max-width: 100%;
-    width: 100%;
-}
-
-.slider {
-    display: flex;
-    aspect-ratio: 16 / 9;
     overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 .25rem .5rem #21212126;
-    border-radius: .5rem;
 }
 
-    .slider img {
-        flex: 1 0 100%;
-        scroll-snap-align: start;
-        object-fit: cover;
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff !important;
+    z-index: 99999;
+}
+
+.navbar-nav {
+    gap: 2rem;
+}
+
+.nav-item {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.dropdown-item {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0 .4rem;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.methods-headers {
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size: 4rem;
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+/*-------------------------------------------------------------------
+                     Estilos para libreria Select2
+---------------------------------------------------------------------*/
+.create-input {
+    border-radius: 10px !important;
+    height: 2.3rem
+}
+
+.select2-selection__choice {
+    border-radius: 10px;
+    height: 2.3rem
+}
+
+.select2-selection--single {
+    border: none !important;
+    height: 2.3rem !important
+}
+
+.select2-selection__placeholder {
+    color: #444 !important
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 35px !important
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 35px
+}
+
+.select2-dropdown {
+    border: 2px solid #ced4da;
+    padding-top: 5px;
+    border-radius: 7px;
+    margin-top: 1.5px;
+    box-shadow: 0 9px 42px 0 rgba(0,0,0,.1)
+}
+
+.select2-results {
+    border: none
+}
+
+.select2-search__field {
+    border-radius: 7px;
+    border: 1px solid #ced4da
+}
+
+    .select2-search__field:focus {
+        outline: 0
     }
 
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
+.select2-selection__rendered {
+    background-color: #ffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 2.3rem
+}
+
+.select2-results__option {
+    padding: 10px;
+    border-bottom: 1px solid #ccc
+}
+
+.select2-results__option--highlighted {
+    background-color: #ccc
+}
+
+.select2-selection__clear {
+    transform: translate(24rem,.46rem);
+    position: absolute
+}
+
+/*-------------------------------------------------------------------
+                   Fin Estilos para libreria Select2
+---------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------
+                            CSS del view HOME
+---------------------------------------------------------------------*/
+/*--------------Carrusel de inicio del Home-----------------------*/
+.Home-Hero {
     position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-top: 5rem;
 }
 
-    .slider-nav a {
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        background-color: #000000;
-        opacity: .75;
-    }
 
-        .slider-nav a:hover {
-            opacity: 100%;
-        }
-*/
+/*Punticos para mover el carrusel*/
+.slick-dots {
+    transform: translateY(-2.5rem)
+}
 
-.Home-Hero, .Home-banners, .Home-build, .Home-testDrive, .Home-contact {
+/*--------------Seccion: nuestros vehiculos-----------------------*/
+
+.Home-banners {
+    margin-top: 60rem;
+}
+
+.Home-banners, .Home-build, .Home-testDrive, .Home-contact {
     padding: 0 8.5rem;
     margin-bottom: 3rem;
 }
@@ -218,41 +183,56 @@ body {
 
 .Home-banners-content {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 790px;
+    height: 430px;
+    position: relative;
 }
 
-    .Home-banners-content a {
-        text-decoration: none;
+.banner-content-1 {
+    background: url(https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/DominicanRepublic/SantoDomingo/Stage/Nuestros-modelos-Autos-nuevos/Vehiculos-nuevos-PLA-desktop.jpg?rev=27b7b4e4090b4eb1bb69c7104af51119);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner-content-2 {
+    background: url(https://assets.porsche.com/do/santodomingo/-/media/Project/DealerWebsites/SharedDealersWebsite/Model-Teaser/911/CZ21V00OX0010_rgb.jpg?rev=-1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.Home-banners-content a {
+    text-decoration: none;
+}
+
+.Home-banners-content span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #ffffff;
+    font-family: 'Roboto Slab';
+    transition: .2s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 2rem 2rem;
+}
+
+    .Home-banners-content span:hover {
+        color: #d5001c;
     }
 
-    .Home-banners-content img {
-        width: 790px;
-        height: 430px;
-        object-fit: cover;
-        border-radius: 3px;
+    .Home-banners-content span svg {
+        margin-right: 5px;
+        transform: rotate(90deg) !important;
     }
 
-    .Home-banners-content span {
-        font-size: 1.5rem;
-        font-weight: 600;
-        position: absolute;
-        white-space: nowrap;
-        transform: translate(-47rem, 22rem) !important;
-        color: #ffffff;
-        font-family: 'Roboto Slab';
-        transition: .2s ease-in-out;
-    }
-
-        .Home-banners-content span:hover {
-            color: #d5001c;
-        }
-
-        .Home-banners-content span svg {
-            margin-right: 5px;
-            transform: rotate(90deg) !important;
-        }
+/*--------------Seccion: crea tu Porsche-----------------------*/
 
 .Home-build-content {
     display: flex;
+    z-index: 1;
 }
 
 .Home-build-Caption {
@@ -292,6 +272,7 @@ body {
     gap: 5px;
     font-size: 1.2rem;
     color: #000000;
+    text-decoration: none;
     font-family: 'Montserrat';
     font-weight: 500;
     border: 3px solid #000000;
@@ -303,13 +284,18 @@ body {
     transition: .2s ease-in-out;
 }
 
-
-
-    .Home-build-imgContainer-configuratorBtn:hover {
-        background-color: #000000;
-        color: #ffffff;
+    .Home-build-imgContainer-configuratorBtn a {
+        text-decoration: none;
+        color: #000000;
+        transition: .2s ease-in-out;
     }
 
+        .Home-build-imgContainer-configuratorBtn:hover, .Home-build-imgContainer-configuratorBtn a:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+/*--------------Seccion: Formulario pide una prueba de manejo-----------------------*/
 .Home-testDrive form {
     font-family: 'Montserrat';
     font-size: 1rem;
@@ -346,6 +332,7 @@ body {
         font-weight: 500;
     }
 
+/*--------------Seccion: ubicacion y contacto-----------------------*/
 .Home-contact-content {
     display: flex;
     justify-content: center;
@@ -409,6 +396,7 @@ body {
             color: #f00e19;
         }
 
+/*--------------Seccion: footer-----------------------*/
 .Home-footer {
     position: absolute;
     right: 0;
@@ -455,3 +443,510 @@ body {
         .Home-footer-social i:hover {
             color: #f00e19;
         }
+/*-------------------------------------------------------------------
+                        Fin CSS del view HOME
+---------------------------------------------------------------------*
+    
+
+
+//*-------------------------------------------------------------------
+          CSS del view VehiculosStocks: Inventario de vehiculos
+---------------------------------------------------------------------*/
+
+/*--------------------------------------Index--------------------------------------------*/
+
+.inventario-vehiculo {
+    display: flex;
+    width: 100%;
+}
+
+.inventario-vehiculo-filtro {
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+    .inventario-vehiculo-filtro h3 {
+        font-weight: 600;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .inventario-vehiculo-filtro .form-group {
+        margin-bottom: 1rem;
+    }
+
+.inventario-vehiculo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+    width: 88%
+}
+
+.inventario-vehiculo-card {
+    width: 19rem;
+    height: 17.125rem;
+    padding: 0 .4rem;
+    margin: 2rem 0;
+}
+
+.inventario-vehiculo-img {
+    width: 18rem;
+}
+
+    .inventario-vehiculo-img img {
+        width: 100%;
+        height: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 2px;
+    }
+
+.inventario-vehiculo-marca_modelo span {
+    font-size: 1.23rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #333333;
+}
+
+.inventario-vehiculo-anio_condicion span {
+    font-family: 'Montserrat';
+    font-size: .8125rem;
+    font-weight: 500;
+    color: #777777;
+}
+
+.inventario-vehiculo-results_not_found {
+    font-size: 4rem;
+    color: #616161;
+    margin: 15rem auto 0 auto;
+}
+/*---------------------------Details----------------------------------*/
+.details-car_inv-container {
+    width: 80%;
+    margin: auto;
+}
+
+.details-car_inv-title_price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+    .details-car_inv-title_price-container h1 {
+        font-family: 'Roboto Slab';
+        font-weight: 600;
+        font-size: 3.3rem;
+    }
+
+    .details-car_inv-title_price-container p {
+        color: #ff0223;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Montserrat';
+    }
+
+
+.details-car_inv_showCarData {
+    display: flex;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+
+.details-car_inv-title_btnShop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .details-car_inv-title_btnShop a {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+.details-car_inv-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 58%;
+    padding: .5rem;
+    justify-content: center;
+}
+
+    .details-car_inv-img-container img {
+        width: 17.625rem;
+        height: 12.4375rem;
+        object-fit: cover;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+
+.details-car_inv-info {
+    width: 42%;
+    max-height: 75vh;
+    display: block;
+    margin-left: 1rem;
+    padding: 1rem 2rem;
+    overflow-y: auto;
+}
+
+.details-car_inv-generalData h4,
+.details-car_inv-equipamiento_Base h4,
+.details-car_inv-equipamiento_Extra h4 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.details-car_inv-generalData table {
+    font-size: 1.2rem;
+}
+
+.details-car_inv-generalData span {
+    font-weight: 700;
+}
+
+.details-car_inv-equipamiento_Base li {
+    margin-bottom: 10px;
+}
+
+
+/*------------------------------------------------------------------------
+ CSS del view Vehiculos (seleccion del modelo): Inventario de vehiculos
+--------------------------------------------------------------------------*/
+
+/*-------------------Index-------------------*/
+
+.card-modelos-headerTitle {
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size: 3.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.car-modelos-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    font-family: 'Montserrat';
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.car-modelos-card {
+    width: 20rem;
+    height: 15rem;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.car-modelos-img {
+    grid-row: 1/2;
+}
+
+    .car-modelos-img img {
+        width: 100%;
+    }
+
+.car-modelo-name {
+    grid-row: 2/3;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+
+
+/*----------------------------------------------------------------------------
+ Fin CSS del view Vehiculos (seleccion del modelo): Inventario de vehiculos
+-----------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------
+ CSS del view VehiculoPersonalizados 
+--------------------------------------------------------------------------*/
+
+
+
+
+
+/*-----------Create----------------*/
+
+.IdModelo {
+    border: none;
+    font-size: 3rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    color: #111111;
+    margin: 1rem auto;
+}
+
+.form-control:disabled {
+    background-color: #ffffff;
+}
+
+.create-form-show-container {
+    display: flex;
+    height: 86vh;
+}
+
+.create-form-show_name_imgs {
+    width: 80%;
+}
+
+    .create-form-show_name_imgs .form-control {
+        width: fit-content;
+        position: absolute;
+        left: 0;
+        margin-left: 2rem;
+    }
+
+    .create-form-show_name_imgs .create-car-imgs {
+        width: 98%;
+        height: 75vh;
+        margin: 7rem auto 0 auto;
+    }
+
+    .create-form-show_name_imgs .create-car-thumbnails {
+        width: 100%;
+        height: 75vh;
+    }
+
+        .create-form-show_name_imgs .create-car-thumbnails img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+.create-form-show_color_extras {
+    width: 20%;
+    width: fit-content;
+    height: 80vh;
+    overflow-y: auto;
+    margin-top: 3.4rem;
+    padding: 1rem .5rem;
+    font-family: 'Montserrat';
+}
+
+    .create-form-show_color_extras .form-group {
+        margin-bottom: 1rem;
+    }
+
+        .create-form-show_color_extras .form-group label {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+    .create-form-show_color_extras input {
+        font-size: 1.2rem !important;
+    }
+
+    .create-form-show_color_extras select {
+        font-size: 1.2rem !important;
+    }
+
+        .create-form-show_color_extras select option {
+            font-size: 1.2rem !important;
+        }
+
+.create-form-show_precioTotal {
+    margin-bottom: 1.4rem;
+}
+
+.create-form-precioTotal_vehiculo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: block;
+}
+
+.create-form-precioTotal_Extras_vehiculo {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Ajusta el ancho del botón según sea necesario */
+    height: 40px; /* Ajusta la altura del botón según sea necesario */
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+    .slick-prev:before, .slick-next:before {
+        font-family: "slick";
+        font-size: 40px;
+        line-height: 1;
+        opacity: 0.75;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+.slick-prev {
+    left: 0;
+}
+
+
+
+.slick-next {
+    right: 0;
+}
+
+
+
+/*----------------------------------------------------------------------------
+                        Fin del view VehiculoPersonalizados 
+-----------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------
+                            CSS del View Ventas
+-----------------------------------------------------------------------------*/
+
+/*-------------Index-----------*/
+.lista_Ventas-table {
+    padding: 0 5rem;
+    font-family: 'Montserrat';
+}
+
+    .lista_Ventas-table table th {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .lista_Ventas-table h1 {
+        font-size: 2.9rem;
+        font-weight: 600;
+    }
+
+    .lista_Ventas-table a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: 2rem 0;
+    }
+
+/*------------Create--------------------*/
+
+.venta-vehiculo-container {
+    padding: 0 4rem;
+}
+
+    .venta-vehiculo-container .form-group {
+        margin-bottom: 1.3rem;
+    }
+
+        .venta-vehiculo-container .form-group label {
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+
+
+/*----------------------------------------------------------------------------
+                        Fin del CSS del View Ventas
+-----------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------
+                            CSS del View Admin
+-----------------------------------------------------------------------------*/
+
+.admin-actions-container {
+    padding: 0 3rem;
+}
+
+    .admin-actions-container table {
+        font-family: 'Montserrat';
+    }
+
+    .admin-actions-container form .form-group{
+        margin-top: 1.5rem;
+    }
+
+    .admin-actions-container form label {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+        .admin-actions-container form input{
+            font-size: 1.3rem;
+        }
+
+        .admin-actions-container table th {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .admin-actions-container table td {
+            font-size: 1.2rem;
+        }
+
+.page-admin-container {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.page-admin-card {
+    width: 22rem;
+    height: 18rem;
+    border-radius: 5px;
+    background-color: #eceff1;
+    padding: 1.5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;*/
+    align-items: center;
+    gap: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+    .page-admin-card a {
+        font-size: 1.2rem;
+        font-weight: 500;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .page-admin-card h4 {
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+.admin-header-title {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+}
+
+.btn-regresar{
+    margin-top: 2rem;
+}
+
+/*----------------------------------------------------------------------------
+                           Fin CSS del View Admin
+-----------------------------------------------------------------------------*/

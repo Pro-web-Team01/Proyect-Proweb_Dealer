@@ -9,177 +9,365 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dealer
 build_property.RootNamespace = Dealer
-build_property.ProjectDir = C:\Users\diego\OneDrive\Desktop\ProgWeb\Dealer\Dealer\
+build_property.ProjectDir = C:\Users\ivanl\Desktop\Proweb-v3\Dealer\Dealer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\diego\OneDrive\Desktop\ProgWeb\Dealer\Dealer
+build_property.MSBuildProjectDirectory = C:\Users\ivanl\Desktop\Proweb-v3\Dealer\Dealer
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/Home/Index.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ColorExteriors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JFeHRlcmlvcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ColorExteriors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JFeHRlcmlvcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ColorExteriors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JFeHRlcmlvcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ColorExteriors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JFeHRlcmlvcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ColorInteriors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JJbnRlcmlvcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ColorInteriors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JJbnRlcmlvcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ColorInteriors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JJbnRlcmlvcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ColorInteriors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JJbnRlcmlvcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/EquipamientoExtras/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWllbnRvRXh0cmFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/EquipamientoExtras/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWllbnRvRXh0cmFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/EquipamientoExtras/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWllbnRvRXh0cmFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/EquipamientoExtras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWllbnRvRXh0cmFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/EquipamientoSeries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWllbnRvU2VyaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/EquipamientoSeries/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWllbnRvU2VyaWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/EquipamientoSeries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWllbnRvU2VyaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/EquipamientoSeries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWllbnRvU2VyaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Home/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/Home/Privacy.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/Shared/Error.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Marcas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Marcas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Marcas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Marcas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Modeloes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Modeloes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Modeloes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Modeloes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Modeloes/ListModelos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvZXNcTGlzdE1vZGVsb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficialClientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficialClientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficialClientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficialClientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsQ2xpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficials/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficials/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficials/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficials/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficialVendedores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsVmVuZGVkb3Jlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficialVendedores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsVmVuZGVkb3Jlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficialVendedores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsVmVuZGVkb3Jlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/ServicioOficialVendedores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljaW9PZmljaWFsVmVuZGVkb3Jlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/VehiculosStocks/Create.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculoPersonalizados/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9QZXJzb25hbGl6YWRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculoPersonalizados/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9QZXJzb25hbGl6YWRvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculoPersonalizados/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9QZXJzb25hbGl6YWRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculoPersonalizados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9QZXJzb25hbGl6YWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculosStocks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zU3RvY2tzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/VehiculosStocks/Delete.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculosStocks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zU3RvY2tzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/VehiculosStocks/Details.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculosStocks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zU3RvY2tzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/VehiculosStocks/Edit.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculosStocks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zU3RvY2tzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/VehiculosStocks/Index.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/VehiculosStocks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9zU3RvY2tzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/_ViewImports.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Ventas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Ventas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Ventas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Ventas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Ventas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/_ViewStart.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/diego/OneDrive/Desktop/ProgWeb/Dealer/Dealer/Views/Shared/_Layout.cshtml]
+[C:/Users/ivanl/Desktop/Proweb-v3/Dealer/Dealer/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-88mdpz1n4b
